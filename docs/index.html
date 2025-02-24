@@ -35,25 +35,25 @@ velocity of the ejected mass. </p>
 
  <p>For a rocket-powered vehicle in a vertical launch from the Earth,
   \[ m\frac{dv}{dt}=-c\frac{dm}{dt}-mg \to dv=-c\frac{dm}{m}-gdt \]
- \[ v = -\int_0^t \mathrm c(h) \mathrm{d}\frac{m}{m} - \int_0^t g(h)dt; h=\int_0^t vdt \]</p>
+ \[ v = -\int_0^t \mathrm c(h) \frac{dm}{m} - \int_0^t g(h)dt; h=\int_0^t vdt \]</p>
   
  
  <p>As indicated, both \(c\) and \(g\) are functions of \(h\). In the case of \(c\), the dependence is through 
 the atmospheric pressure, \(p_0\), an effect we will explore in detail later. The atmospheric 
 pressure varies with weather and with temperature, but a rule of thumb is:
- \[ \frac{p_0}{p_0(r_E)}=e^\frac{r-r_E}{6.68}r-r_E=km\]</p>
+ \[ \frac{p_0}{p_0(r_E)}=e^-\frac{r-r_E}{6.68}r-r_E=km\]</p>
 
  <p>In fact the pressure variation is much more important in the context of aircraft engines, 
 whose thrust is essentially proportional to the atmospheric density, other factors being 
 equal. </p>
 
- <p>The gravitational attraction varies as \(g(r) = g_E (r_E/r)^2 \) , where r_E is the Earth's radius, \(r\) =
-/( r_E + h\) and g_E is the gravitational acceleration at the Earth’s surface. Since rockets 
+ <p>The gravitational attraction varies as \(g(r) = g_E (r_E/r)^2 \) , where \(r_E\) is the Earth's radius, \(r =
+r_E + h\) and \(g_E\) is the gravitational acceleration at the Earth’s surface. Since rockets 
 typically operate for a short time only, \(g\) may be taken here as a constant to a good 
 approximation.</p>
 
  <p>If as a first approximation we take c and g constant we can integrate the rocket equation 
-to get: \[ v-v0 = -cln\frac{m(t)}{m_0}-gt \] and this is the usual form of the Rocket Equation. Remember that it applies to a vertical 
+to get: \[ v-v_0 = -cln\frac{m(t)}{m_0}-gt \] and this is the usual form of the Rocket Equation. Remember that it applies to a vertical 
 launch. For other flight paths the last term changes. Also remember that we have 
 neglected atmospheric drag forces (this last approximation is valid for large rockets, but 
 may not be for smaller vehicles, which have more area per unit volume). </p>
@@ -63,7 +63,7 @@ may not be for smaller vehicles, which have more area per unit volume). </p>
   <p>As we will see, it is helpful to express this relation as one for the mass ratio in 
 terms of the velocity change, since it is the latter that is set by the mission, e.g. launch to 
 LEO. But this leaves gt to be determined. If we make the additional assumption that \(\dot{m}\)
-    = constant, then</p>
+    = constant, then \[ m_0-m(t)=\dot{m}t=\frac{F}{c}t=\frac{m_0A_0}{c}t</p>
 </div>
 
 </body>
